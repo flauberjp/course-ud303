@@ -18,6 +18,7 @@ def SampleRecord():
 
     return "My name is {} {} and the PIN on my card is {}.".format(
         # 2. Add the correct fields from the JSON data structure.
+        r.json()['name'], r.json()['surname'], (r.json()['credit_card'])['pin']
     )
 
 if __name__ == '__main__':
